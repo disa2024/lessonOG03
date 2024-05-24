@@ -40,7 +40,7 @@ game_over = False
 while running:
     # Рассчитываем оставшееся время
     seconds = (pygame.time.get_ticks() - start_ticks) // 1000
-    remaining_time = 10 - seconds
+    remaining_time = 30 - seconds
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
@@ -70,6 +70,6 @@ while running:
 
     pygame.display.update()
     # Задержка для смены позиции мишени
-    pygame.time.delay(900)  # 500 миллисекунд
+    pygame.time.delay(800)  # 500 миллисекунд
 
 pygame.quit()
